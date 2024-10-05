@@ -29,6 +29,7 @@ from strings import get_string
 @LanguageStart
 async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
+    await message.react("♥️")
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
@@ -88,6 +89,7 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         UP, CPU, RAM, DISK = await bot_sys_stats()
         await message.reply_photo(
+            await message.reply_sticker("CAACAgUAAxkBAAIaCmcBGJTJ9R_qEHwdbfiPl9_G3ASDAALiCwACd6CBVeTrTUhXw-nXHgQ")
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM),
             reply_markup=InlineKeyboardMarkup(out),
@@ -104,6 +106,7 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
+    await message.reply_sticker("CAACAgUAAxkBAAIaCmcBGJTJ9R_qEHwdbfiPl9_G3ASDAALiCwACd6CBVeTrTUhXw-nXHgQ")
     await message.reply_photo(
         photo=config.START_IMG_URL,
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
@@ -139,6 +142,7 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
+                await message.reply_sticker("CAACAgUAAxkBAAIaCmcBGJTJ9R_qEHwdbfiPl9_G3ASDAALiCwACd6CBVeTrTUhXw-nXHgQ")
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_3"].format(
