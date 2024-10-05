@@ -69,7 +69,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
 
-                text="ᴜᴘᴅᴀᴛᴇ",
+                text="𝐓ᴀᴘ 𝐓ᴏ 𝐒ᴇᴇ 𝐌ᴀɢɪᴄ ✨",
 
                 url=f"https://t.me/About_Sohini",
         ]
