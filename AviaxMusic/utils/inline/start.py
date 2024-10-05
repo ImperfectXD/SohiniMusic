@@ -12,6 +12,8 @@ def start_panel(_):
             ),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
+        [InlineKeyboardButton(text="𝐌ᴏᴠɪᴇs 🍿", url=f"https://t.me/+CwLuv7jviXhiMGVl)],",
+            
     ]
     return buttons
 
