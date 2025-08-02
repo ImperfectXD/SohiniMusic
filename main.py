@@ -496,50 +496,50 @@ async def show_help_callback(_, callback_query):
 async def help_music_callback(_, callback_query):
     text = (
         ">🎵 *ᴍᴜsɪᴄ & ᴘʟᴀʏʙᴀᴄᴋ ᴄᴏᴍᴍᴀɴᴅs*\n\n"
-        "> `/play <song name or URL>`\n"
+        ">❍ `/play <song name or URL>`\n"
         "   • Play a song (YouTube/Spotify/Resso/Apple Music/SoundCloud).\n"
         "   • If replied to an audio/video, plays it directly.\n\n"
-        ">➜ `/playlist`\n"
+        ">❍ `/playlist`\n"
         "   • View or manage your saved playlist.\n\n"
-        ">➜ `/skip`\n"
+        ">❍ `/skip`\n"
         "   • Skip the currently playing song. (Admins only)\n\n"
-        ">➜ `/pause`\n"
+        ">❍ `/pause`\n"
         "   • Pause the current stream. (Admins only)\n\n"
-        ">➜ `/resume`\n"
+        ">❍ `/resume`\n"
         "   • Resume a paused stream. (Admins only)\n\n"
-        ">➜ `/stop` or `/end`\n"
+        ">❍ `/stop` or `/end`\n"
         "   • Stop playback and clear the queue. (Admins only)"
     )
-    buttons = [[InlineKeyboardButton("🔙 Back", callback_data="show_help")]]
+    buttons = [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="show_help")]]
     await callback_query.message.edit_text(text, parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(buttons))
 
 
 @bot.on_callback_query(filters.regex("^help_admin$"))
 async def help_admin_callback(_, callback_query):
     text = (
-        "🛡️ *Admin & Moderation Commands*\n\n"
-        ">➜ `/mute @user`\n"
+        "🛡️ *ᴀᴅᴍɪɴ & ᴍᴏᴅᴇʀᴀᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅs*\n\n"
+        ">❍ `/mute @user`\n"
         "   • Mute a user indefinitely. (Admins only)\n\n"
-        ">➜ `/unmute @user`\n"
+        ">❍ `/unmute @user`\n"
         "   • Unmute a previously muted user. (Admins only)\n\n"
-        ">➜ `/tmute @user <minutes>`\n"
+        ">❍ `/tmute @user <minutes>`\n"
         "   • Temporarily mute for a set duration. (Admins only)\n\n"
-        ">➜ `/kick @user`\n"
+        ">❍ `/kick @user`\n"
         "   • Kick (ban + unban) a user immediately. (Admins only)\n\n"
-        ">➜ `/ban @user`\n"
+        ">❍ `/ban @user`\n"
         "   • Ban a user. (Admins only)\n\n"
-        ">➜ `/unban @user`\n"
+        ">❍ `/unban @user`\n"
         "   • Unban a previously banned user. (Admins only)"
     )
-    buttons = [[InlineKeyboardButton("🔙 Back", callback_data="show_help")]]
+    buttons = [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="show_help")]]
     await callback_query.message.edit_text(text, parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(buttons))
 
 
 @bot.on_callback_query(filters.regex("^help_couple$"))
 async def help_couple_callback(_, callback_query):
     text = (
-        "❤️ *Couple Suggestion Command*\n\n"
-        ">➜ `/couple`\n"
+        "❤️ *ᴄᴏᴘᴜʟᴇ sᴜɢɢᴇsᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅ*\n\n"
+        ">❍ `/couple`\n"
         "   • Picks two random non-bot members and posts a “couple” image with their names.\n"
         "   • Caches daily so the same pair appears until midnight UTC.\n"
         "   • Uses per-group member cache for speed."
@@ -551,14 +551,14 @@ async def help_couple_callback(_, callback_query):
 @bot.on_callback_query(filters.regex("^help_util$"))
 async def help_util_callback(_, callback_query):
     text = (
-        "🔍 *Utility & Extra Commands*\n\n"
-        ">➜ `/ping`\n"
+        "🔍 *ᴜᴛɪʟɪᴛʏ & ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅs*\n\n"
+        ">❍ `/ping`\n"
         "   • Check bot’s response time and uptime.\n\n"
-        ">➜ `/clear`\n"
+        ">❍ `/clear`\n"
         "   • Clear the entire queue. (Admins only)\n\n"
-        ">➜ Auto-Suggestions:\n"
+        ">❍ Auto-Suggestions:\n"
         "   • When the queue ends, the bot automatically suggests new songs via inline buttons.\n\n"
-        ">➜ *Audio Quality & Limits*\n"
+        ">❍ *Audio Quality & Limits*\n"
         "   • Streams up to 2 hours 10 minutes, but auto-fallback for longer. (See `MAX_DURATION_SECONDS`)\n"
     )
     buttons = [[InlineKeyboardButton("🔙 Back", callback_data="show_help")]]
@@ -755,15 +755,15 @@ async def process_play_command(message: Message, query: str):
             await fallback_local_playback(chat_id, processing_message, chat_containers[chat_id][0])
         else:
             queue_buttons = InlineKeyboardMarkup([
-                [InlineKeyboardButton("⏭ Skip", callback_data="skip"),
-                 InlineKeyboardButton("🗑 Clear", callback_data="clear")]
+                [InlineKeyboardButton("⏭ sᴋɪᴘ", callback_data="skip"),
+                 InlineKeyboardButton("🗑 ᴄʟᴇᴀʀ", callback_data="clear")]
             ])
             await message.reply(
-                f"✨ Added to queue :\n\n"
-                f"**❍ Title ➥** {title}\n"
-                f"**❍ Time ➥** {readable}\n"
-                f"**❍ By ➥ ** {message.from_user.first_name if message.from_user else 'Unknown'}\n"
-                f"**Queue number:** {len(chat_containers[chat_id]) - 1}",
+                f"✨ ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ :\n\n"
+                f"**❍ 𝐓ɪᴛʟᴇ ➥** {title}\n"
+                f"**❍ 𝐓ɪᴍᴇ ➥** {readable}\n"
+                f"**❍ 𝐑ᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {message.from_user.first_name if message.from_user else 'Unknown'}\n"
+                f"**ǫᴜᴇᴜᴇ ɴᴜᴍʙᴇʀ:** {len(chat_containers[chat_id]) - 1}",
                 reply_markup=queue_buttons
             )
             await processing_message.delete()
@@ -824,8 +824,8 @@ def format_time(seconds: float) -> str:
 def get_progress_bar_styled(elapsed: float, total: float, bar_length: int = 14) -> str:
     """
     Build a progress bar string in the style:
-      elapsed_time  <dashes>❄️<dashes>  total_time
-    For example: 0:30 —❄️———— 3:09
+      elapsed_time  <dashes>♥️<dashes>  total_time
+    For example: 0:30 —♥️———— 3:09
     """
     if total <= 0:
         return "Progress: N/A"
@@ -835,7 +835,7 @@ def get_progress_bar_styled(elapsed: float, total: float, bar_length: int = 14) 
         marker_index = bar_length - 1
     left = "━" * marker_index
     right = "─" * (bar_length - marker_index - 1)
-    bar = left + "❄️" + right
+    bar = left + "♥️" + right
     return f"{format_time(elapsed)} {bar} {format_time(total)}"
 
 
@@ -932,9 +932,9 @@ async def fallback_local_playback(chat_id: int, message: Message, song_info: dic
         one_line = _one_line_title(song_info["title"])
         base_caption = (
             "<blockquote>"
-            "<b>🎧 Frozen ✘ Music Streaming</b> (Local Playback)\n\n"
-            f"❍ <b>Title:</b> {one_line}\n"
-            f"❍ <b>Requested by:</b> {song_info['requester']}"
+            "<b>🎧 sᴏʜɪɴɪ ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ ♡</b> (Local Playback)\n\n"
+            f"❍ <b>𝐓ɪᴛʟᴇ:</b> {one_line}\n"
+            f"❍ <b>𝐑ᴇǫᴜᴇsᴛᴇᴅ ʙʏ:</b> {song_info['requester']}"
             "</blockquote>"
         )
         initial_progress = get_progress_bar_styled(0, total_duration)
@@ -1316,7 +1316,7 @@ async def reboot_handler(_, message):
 
         await message.reply("♻️ Rebooted for this chat. All data for this chat has been cleared.")
     except Exception as e:
-        await message.reply(f"❌ Failed to reboot for this chat. Error: {str(e)}\n\n support - @frozensupport1")
+        await message.reply(f"❌ Failed to reboot for this chat. Error: {str(e)}\n\n support - @Brocode_chat")
 
 
 
@@ -1337,12 +1337,12 @@ async def ping_handler(_, message):
 
         # Build the final message
         response = (
-            f"🏓 **Pong!**\n\n"
-            f"**Local Server Stats:**\n"
-            f"• **Uptime:** `{uptime_str}`\n"
-            f"• **CPU Usage:** `{cpu_usage}%`\n"
-            f"• **RAM Usage:** `{ram_usage}`\n"
-            f"• **Disk Usage:** `{disk_usage}`"
+            f"🏓 **ᴘᴏɴɢ...**\n\n"
+            f"**ʟᴏᴄᴀʟ sᴇʀᴠᴇʀ sᴛᴀᴛs:**\n"
+            f"• **ᴜᴘᴛɪᴍᴇ:** `{uptime_str}`\n"
+            f"• **𝐂𝐏𝐔_𝐔sᴀɢᴇ:** `{cpu_usage}%`\n"
+            f"• **𝐑𝐀𝐌_𝐔sᴀɢᴇ:** `{ram_usage}`\n"
+            f"• **𝐃𝐈𝐒𝐊_𝐔ᴜᴀɢᴇ:** `{disk_usage}`"
         )
 
         await message.reply(response)
