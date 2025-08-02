@@ -64,7 +64,7 @@ API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 ASSISTANT_SESSION = os.environ.get("ASSISTANT_SESSION")
-OWNER_ID = int(os.getenv("OWNER_ID", "5268762773"))
+OWNER_ID = int(os.getenv("OWNER_ID", "8095670572"))
 
 # ——— Monkey-patch resolve_peer ——————————————
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
@@ -400,17 +400,17 @@ async def start_handler(_, message):
     buttons = [
         [
             InlineKeyboardButton(f"♡ {add_me_text}", url=f"{BOT_LINK}?startgroup=true"),
-            InlineKeyboardButton(f"♡ {updates_text}", url="https://t.me/vibeshiftbots")
+            InlineKeyboardButton(f"♡ {updates_text}", url="https://t.me/Thoughtsofshubho")
         ],
         [
-            InlineKeyboardButton(f"♡ {support_text}", url="https://t.me/Frozensupport1"),
+            InlineKeyboardButton(f"♡ {support_text}", url="https://t.me/brocode_chat"),
             InlineKeyboardButton(f"♡ {help_text}", callback_data="show_help")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
 
-    await message.reply_animation(
-        animation="https://frozen-imageapi.lagendplayersyt.workers.dev/file/2e483e17-05cb-45e2-b166-1ea476ce9521.mp4",
+    await message.reply_photo(
+        photo="https://files.catbox.moe/dufgfh.jpg",
         caption=caption,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=reply_markup
