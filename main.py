@@ -380,31 +380,31 @@ async def start_handler(_, message):
     styled_name = to_bold_unicode(raw_name)
     user_link = f"[{styled_name}](tg://user?id={user_id})"
 
-    add_me_text = to_bold_unicode("Add Me")
-    updates_text = to_bold_unicode("Updates")
-    support_text = to_bold_unicode("Support")
-    help_text = to_bold_unicode("Help")
+    add_me_text = to_bold_unicode("ᴀᴅᴅ-ᴍᴇ")
+    updates_text = to_bold_unicode("sᴏʜɪɴɪ")
+    support_text = to_bold_unicode("sᴜᴘᴘᴏʀᴛ")
+    help_text = to_bold_unicode("ᴀʙɪʟɪᴛʏ")
 
     caption = (
-        f"👋 нєу {user_link} 💠, 🥀\n\n"
-        f">🎶 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 {BOT_NAME.upper()}! 🎵\n"
-        ">🚀 𝗧𝗢𝗣-𝗡𝗢𝗧𝗖𝗛 24×7 𝗨𝗣𝗧𝗜𝗠𝗘 & 𝗦𝗨𝗣𝗣𝗢𝗥𝗧\n"
-        ">🔊 𝗖𝗥𝗬𝗦𝗧𝗔𝗟-𝗖𝗟𝗘𝗔𝗥 𝗔𝗨𝗗𝗜𝗢\n"
-        ">🎧 𝗦𝗨𝗣𝗣𝗢𝗥𝗧𝗘𝗗 𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠𝗦: YouTube | Spotify | Resso | Apple Music | SoundCloud\n"
-        ">✨ 𝗔𝗨𝗧𝗢-𝗦𝗨𝗚𝗚𝗘𝗦𝗧𝗜𝗢𝗡𝗦 when queue ends\n"
-        ">🛠️ 𝗔𝗗𝗠𝗜𝗡 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦: Pause, Resume, Skip, Stop, Mute, Unmute, Tmute, Kick, Ban, Unban, Couple\n"
-        ">❤️ 𝗖𝗢𝗨𝗣𝗟𝗘 𝗦𝗨𝗚𝗚𝗘𝗦𝗧𝗜𝗢𝗡 (pick random pair in group)\n"
-        f"๏ ᴄʟɪᴄᴋ {help_text} ʙᴇʟᴏᴡ ғᴏʀ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ."
+       f"♡ 𝑴𝒆𝒐𝒘 {user_link} 🐾, 🥀\n\n"
+        f">♡ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 {BOT_NAME.upper()}! 🎵\n"
+        ">𝑻𝒐𝒑 𝑵𝒐𝒕𝒄𝒉 𝟐𝟒𝐱𝟕 𝑼𝒑𝒕𝒊𝒎𝒆 & 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 🐾\n"
+        ">𝑪𝒓𝒚𝒔𝒕𝒂𝒍-𝑪𝒍𝒆𝒂𝒓 𝑨𝒖𝒅𝒊𝒐 🐾\n"
+        ">𝑺𝒖𝒑𝒑𝒐𝒓𝒕𝒆𝒅 𝑷𝒍𝒂𝒕𝒇𝒐𝒓𝒎𝒔 » ʏᴏᴜ-ᴛᴜʙᴇ | sᴘᴏᴛɪғʏ | ʀᴇssᴏ | ᴀᴘᴘʟᴇ ᴍᴜsɪᴄ | sᴏᴜɴᴅ-ᴄʟᴏᴜᴅ\n"
+        ">𝑨𝒖𝒕𝒐-𝑺𝒖𝒈𝒈𝒆𝒔𝒕𝒊𝒐𝒏𝒔 𝑾𝒉𝒆𝒏 𝑸𝒖𝒆𝒖𝒆 𝑬𝒏𝒅𝒔\n"
+        ">𝑨𝒅𝒎𝒊𝒏 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 » ᴘᴀᴜsᴇ, ʀᴇsᴜᴍᴇ, sᴋɪᴘ, sᴛᴏᴘ, ᴍᴜᴛᴇ, ᴜɴᴍᴜᴛᴇ, ᴛ-ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ʙᴀɴ, ᴜɴ-ʙᴀɴ, ᴄᴏᴜᴘʟᴇ\n"
+        ">𝑪𝒐𝒖𝒑𝒍𝒆 𝑺𝒖𝒈𝒈𝒆𝒔𝒕𝒊𝒐𝒏𝒔 (𝑷𝒊𝒄𝒌 𝑹𝒂𝒏𝒅𝒐𝒎 𝑷𝒂𝒊𝒓 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑)\n"
+        f"๏ ᴄʟɪᴄᴋ ʜᴇʟᴘ ʙᴇʟᴏᴡ ғᴏʀ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ."
     )
 
     buttons = [
         [
-            InlineKeyboardButton(f"➕ {add_me_text}", url=f"{BOT_LINK}?startgroup=true"),
-            InlineKeyboardButton(f"📢 {updates_text}", url="https://t.me/vibeshiftbots")
+            InlineKeyboardButton(f"♡ {add_me_text}", url=f"{BOT_LINK}?startgroup=true"),
+            InlineKeyboardButton(f"♡ {updates_text}", url="https://t.me/vibeshiftbots")
         ],
         [
-            InlineKeyboardButton(f"💬 {support_text}", url="https://t.me/Frozensupport1"),
-            InlineKeyboardButton(f"❓ {help_text}", callback_data="show_help")
+            InlineKeyboardButton(f"♡ {support_text}", url="https://t.me/Frozensupport1"),
+            InlineKeyboardButton(f"♡ {help_text}", callback_data="show_help")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -435,31 +435,31 @@ async def go_back_callback(_, callback_query):
     styled_name = to_bold_unicode(raw_name)
     user_link = f"[{styled_name}](tg://user?id={user_id})"
 
-    add_me_text = to_bold_unicode("Add Me")
-    updates_text = to_bold_unicode("Updates")
-    support_text = to_bold_unicode("Support")
-    help_text = to_bold_unicode("Help")
+    add_me_text = to_bold_unicode("ᴀᴅᴅ-ᴍᴇ")
+    updates_text = to_bold_unicode("sᴏʜɪɴɪ")
+    support_text = to_bold_unicode("sᴜᴘᴘᴏʀᴛ")
+    help_text = to_bold_unicode("ᴀʙɪʟɪᴛʏ")
 
     caption = (
-        f"♥️ нєу {user_link} 💠, 🥀\n\n"
-        f">♡ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 {BOT_NAME.upper()}! ♥️\n"
-        ">🚀 𝗧𝗢𝗣-𝗡𝗢𝗧𝗖𝗛 24×7 𝗨𝗣𝗧𝗜𝗠𝗘 & 𝗦𝗨𝗣𝗣𝗢𝗥𝗧\n"
-        ">🔊 𝗖𝗥𝗬𝗦𝗧𝗔𝗟-𝗖𝗟𝗘𝗔𝗥 𝗔𝗨𝗗𝗜𝗢\n"
-        ">🎧 𝗦𝗨𝗣𝗣𝗢𝗥𝗧𝗘𝗗 𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠𝗦: YouTube | Spotify | Resso | Apple Music | SoundCloud\n"
-        ">✨ 𝗔𝗨𝗧𝗢-𝗦𝗨𝗚𝗚𝗘𝗦𝗧𝗜𝗢𝗡𝗦 when queue ends\n"
-        ">♥️ 𝑨𝒅𝒎𝒊𝒏 𝑪𝒐𝒎𝒎𝒂𝒏𝑫𝒔» 𝑷𝒂𝒖𝒔𝒆, 𝑹𝒆𝒔𝒖𝒎𝒆, 𝑺𝒌𝒊𝒑, 𝑺𝒕𝒐𝒑, 𝑴𝒖𝒕𝒆, 𝑼𝒏𝒎𝒖𝒕𝒆, 𝑻_𝑴𝒖𝒕𝒆, 𝑲𝒊𝒄𝒌, 𝑩𝒂𝒏, 𝑼𝒏𝒃𝒂𝒏, 𝑪𝒐𝒖𝒑𝒍𝒆\n"
-        ">❤️ 𝑪𝒐𝒖𝒑𝒍𝒆 (𝑷𝒊𝒄𝒌 𝑹𝒂𝒏𝒅𝒐𝒎 𝑷𝒂𝒊𝒓 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑)\n"
-        f"๏ ᴄʟɪᴄᴋ {help_text} ʙᴇʟᴏᴡ ғᴏʀ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ."
+        f"♡ 𝑴𝒆𝒐𝒘 {user_link} 🐾, 🥀\n\n"
+        f">♡ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 {BOT_NAME.upper()}! 🎵\n"
+        ">𝑻𝒐𝒑 𝑵𝒐𝒕𝒄𝒉 𝟐𝟒𝐱𝟕 𝑼𝒑𝒕𝒊𝒎𝒆 & 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 🐾\n"
+        ">𝑪𝒓𝒚𝒔𝒕𝒂𝒍-𝑪𝒍𝒆𝒂𝒓 𝑨𝒖𝒅𝒊𝒐 🐾\n"
+        ">𝑺𝒖𝒑𝒑𝒐𝒓𝒕𝒆𝒅 𝑷𝒍𝒂𝒕𝒇𝒐𝒓𝒎𝒔 » ʏᴏᴜ-ᴛᴜʙᴇ | sᴘᴏᴛɪғʏ | ʀᴇssᴏ | ᴀᴘᴘʟᴇ ᴍᴜsɪᴄ | sᴏᴜɴᴅ-ᴄʟᴏᴜᴅ\n"
+        ">𝑨𝒖𝒕𝒐-𝑺𝒖𝒈𝒈𝒆𝒔𝒕𝒊𝒐𝒏𝒔 𝑾𝒉𝒆𝒏 𝑸𝒖𝒆𝒖𝒆 𝑬𝒏𝒅𝒔\n"
+        ">𝑨𝒅𝒎𝒊𝒏 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 » ᴘᴀᴜsᴇ, ʀᴇsᴜᴍᴇ, sᴋɪᴘ, sᴛᴏᴘ, ᴍᴜᴛᴇ, ᴜɴᴍᴜᴛᴇ, ᴛ-ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ʙᴀɴ, ᴜɴ-ʙᴀɴ, ᴄᴏᴜᴘʟᴇ\n"
+        ">𝑪𝒐𝒖𝒑𝒍𝒆 𝑺𝒖𝒈𝒈𝒆𝒔𝒕𝒊𝒐𝒏𝒔 (𝑷𝒊𝒄𝒌 𝑹𝒂𝒏𝒅𝒐𝒎 𝑷𝒂𝒊𝒓 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑)\n"
+        f"๏ ᴄʟɪᴄᴋ ʜᴇʟᴘ ʙᴇʟᴏᴡ ғᴏʀ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ."
     )
 
     buttons = [
         [
-            InlineKeyboardButton(f"➕ {add_me_text}", url=f"{BOT_LINK}?startgroup=true"),
-            InlineKeyboardButton(f"📢 {updates_text}", url="https://t.me/thoughtsofshubho")
+            InlineKeyboardButton(f"♡ {add_me_text}", url=f"{BOT_LINK}?startgroup=true"),
+            InlineKeyboardButton(f"♡ {updates_text}", url="https://t.me/thoughtsofshubho")
         ],
         [
-            InlineKeyboardButton(f"💬 {support_text}", url="https://t.me/Brocode_chat"),
-            InlineKeyboardButton(f"❓ {help_text}", callback_data="show_help")
+            InlineKeyboardButton(f"♡ {support_text}", url="https://t.me/Brocode_chat"),
+            InlineKeyboardButton(f"♡ {help_text}", callback_data="show_help")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -474,18 +474,18 @@ async def go_back_callback(_, callback_query):
 
 @bot.on_callback_query(filters.regex("^show_help$"))
 async def show_help_callback(_, callback_query):
-    help_text = ">📜 *Choose a category to explore commands:*"
+    help_text = ">📜 *ᴄʜᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴄᴏᴍᴍᴀɴᴅs:*"
     buttons = [
         [
-            InlineKeyboardButton("🎵 Music Controls", callback_data="help_music"),
-            InlineKeyboardButton("🛡️ Admin Tools", callback_data="help_admin")
+            InlineKeyboardButton("ᴍᴜsɪᴄ ᴄᴏɴᴛʀᴏʟs", callback_data="help_music"),
+            InlineKeyboardButton("ᴀᴅᴍɪɴ ᴛᴏᴏʟs", callback_data="help_admin")
         ],
         [
-            InlineKeyboardButton("❤️ Couple Suggestion", callback_data="help_couple"),
-            InlineKeyboardButton("🔍 Utility", callback_data="help_util")
+            InlineKeyboardButton("ᴄᴏᴜᴘʟᴇ ♥️", callback_data="help_couple"),
+            InlineKeyboardButton("ᴜᴛɪʟɪᴛʏ", callback_data="help_util")
         ],
         [
-            InlineKeyboardButton("🏠 Home", callback_data="go_back")
+            InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="go_back")
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -495,8 +495,8 @@ async def show_help_callback(_, callback_query):
 @bot.on_callback_query(filters.regex("^help_music$"))
 async def help_music_callback(_, callback_query):
     text = (
-        ">🎵 *Music & Playback Commands*\n\n"
-        ">➜ `/play <song name or URL>`\n"
+        ">🎵 *ᴍᴜsɪᴄ & ᴘʟᴀʏʙᴀᴄᴋ ᴄᴏᴍᴍᴀɴᴅs*\n\n"
+        "> `/play <song name or URL>`\n"
         "   • Play a song (YouTube/Spotify/Resso/Apple Music/SoundCloud).\n"
         "   • If replied to an audio/video, plays it directly.\n\n"
         ">➜ `/playlist`\n"
